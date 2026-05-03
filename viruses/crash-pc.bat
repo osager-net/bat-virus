@@ -1,6 +1,6 @@
 :: (Нагрузка на ПК постоянным открытием системных программ)
 :forever
-start explorer
+start explorer.exe
 start notepad
 start cmd
 start msinfo32

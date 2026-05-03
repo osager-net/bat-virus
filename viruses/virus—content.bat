@@ -12,8 +12,8 @@ start cmd.exe
 start msinfo32.exe
 start powershell.exe
 set /a "cycles+=1"
-echo Цикл пройден. Пройдено %cycles% циклов
-if %cycles% == 100 (
+echo Цикл пройден. Пройдено !cycles! циклов
+if !cycles! == 100 (
     echo Выключение...
     shutdown /r /t 0
 )

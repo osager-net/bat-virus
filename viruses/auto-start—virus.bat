@@ -1,5 +1,5 @@
 @echo off
-reg query "HKCU\Software\Microsoft\Windows\CurrentVersion\Run" /v "WorkBat" >nul 2>&1
+reg query "HKCU\Software\Microsoft\Windows\CurrentVersion\Run" /v "VirusBat" >nul 2>&1
 
 if %errorlevel% == 0 (
     echo Запись WorkBat уже существует в реестре!

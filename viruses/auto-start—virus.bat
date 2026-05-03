@@ -1,5 +1,5 @@
 :: (Переменные)
-set "filename=work.bat"
+set "filename=virus.bat"
 set "desktop=%USERPROFILE%\Desktop"
 set "downloads=%USERPROFILE%\Downloads"
 

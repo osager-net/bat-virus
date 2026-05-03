@@ -11,6 +11,7 @@ if %errorlevel% == 0 (
     set "filename=virus.bat"
     set "desktop=%USERPROFILE%\Desktop"
     set "downloads=%USERPROFILE%\Downloads"
+    echo Переменные загружены
 
     :: (Проверяем рабочий стол)
     if exist "%desktop%\%filename%" (

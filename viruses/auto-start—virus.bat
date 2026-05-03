@@ -7,3 +7,5 @@ if %errorlevel% == 0 (
 ) else (
     echo Записи WorkBat нет в реестре. Можно добавлять.
 )
+
+:end

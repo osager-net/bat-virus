@@ -8,7 +8,7 @@ if exist "%desktop%\%filename%" (
     goto :end
 )
 
-:: Проверяем «Загрузки»
+:: (Проверяем загрузки)
 if exist "%downloads%\%filename%" (
     reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\Run" /v "WorkBat" /t REG_SZ /d "%downloads%\%filename%" /f
 )

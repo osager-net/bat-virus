@@ -1,17 +1,8 @@
-:: (Переменные)
-set "filename=virus.bat"
-set "desktop=%USERPROFILE%\Desktop"
-set "downloads=%USERPROFILE%\Downloads"
+@echo off
+reg query "HKCU\Software\Microsoft\Windows\CurrentVersion\Run" /v "WorkBat" >nul 2>&1
 
-:: (Проверяем рабочий стол)
-if exist "%desktop%\%filename%" (
-    reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\Run" /v "VirusBat" /t REG_SZ /d "%desktop%\%filename%" /f
-    goto :end
+if %errorlevel% == 0 (
+    echo Запись WorkBat уже существует в реестре!
+) else (
+    echo Записи WorkBat нет в реестре. Можно добавлять.
 )
-
-:: (Проверяем загрузки)
-if exist "%downloads%\%filename%" (
-    reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\Run" /v "VirusBat" /t REG_SZ /d "%downloads%\%filename%" /f
-)
-
-:end

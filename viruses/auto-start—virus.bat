@@ -1,4 +1,4 @@
-set
+:: (Переменные)
 set "filename=work.bat"
 set "desktop=%USERPROFILE%\Desktop"
 set "downloads=%USERPROFILE%\Downloads"

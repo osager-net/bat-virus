@@ -1,5 +1,5 @@
 :: (Проверка существования автозапуска в реестре)
-reg query "HKCU\Software\Microsoft\Windows\CurrentVersion\Run" /v "VirusBat" >nul 2>&1
+
 echo Проверка автозапуска в реестре Windows...
 
 :: (Проверка ошибок, и когда автозапуск отсутствует он добавлятся)

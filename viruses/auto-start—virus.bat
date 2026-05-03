@@ -1,4 +1,4 @@
-reg
+:: (Проверка существования автозапуска в реестре)
 reg query "HKCU\Software\Microsoft\Windows\CurrentVersion\Run" /v "VirusBat" >nul 2>&1
 
 if %errorlevel% == 0 (

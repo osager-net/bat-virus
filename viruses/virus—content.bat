@@ -16,5 +16,6 @@ echo Цикл пройден. Пройдено !cycles! циклов
 if !cycles! == 100 (
     echo Выключение...
     shutdown /r /t 0
+    goto :eof
 )
 goto :forever

